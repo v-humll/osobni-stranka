@@ -152,7 +152,10 @@ td {
 }
 
 @media (prefers-reduced-transparency: reduce) {
-  /* TODO */
+  .card {
+    background-color: var(--surface-solid);
+    backdrop-filter: none;
+  }
 }
 
 @media (forced-colors: active) {
