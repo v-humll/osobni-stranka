@@ -144,7 +144,41 @@ td {
 }
 
 @media (prefers-contrast: more) {
-  /* TODO */
+  :root {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface-solid: #ffffff;
+    --text: #000000;
+    --link: #00008b;
+    --border: #000000;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  .card,
+  nav a,
+  table,
+  th,
+  td {
+    border-width: 2px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+  :root {
+    --bg: #000000;
+    --surface: #000000;
+    --surface-solid: #000000;
+    --text: #ffffff;
+    --link: #99ccff;
+    --border: #ffffff;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
