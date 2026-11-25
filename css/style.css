@@ -126,15 +126,34 @@ td {
 }
 
 @media (min-width: 40em) {
-  /* TODO */
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .site-header,
+  main,
+  footer {
+    padding: 1.5rem;
+  }
 }
 
 @media (min-width: 60em) {
-  /* TODO */
+  #projekty {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 80em) {
-  /* TODO */
+  .site-header,
+  main,
+  footer {
+    max-width: 75rem;
+  }
+
+  #projekty {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
