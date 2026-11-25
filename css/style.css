@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light dark;
   --bg: #f4f6f8;
   --surface: rgba(255, 255, 255, 0.85);
   --surface-solid: #ffffff;
@@ -139,7 +140,16 @@ td {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* TODO */
+    --bg: #121518;
+    --surface: rgba(28, 33, 39, 0.85);
+    --surface-solid: #1c2127;
+    --text: #e6edf3;
+    --link: #6cb6ff;
+    --border: #373e47;
+  }
+
+  body {
+    background-image: linear-gradient(135deg, #121518 0%, #1b2026 100%);
   }
 }
 
