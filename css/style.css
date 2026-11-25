@@ -156,5 +156,20 @@ td {
 }
 
 @media (forced-colors: active) {
-  /* TODO */
+  .card,
+  table,
+  th,
+  td {
+    border: 1px solid CanvasText;
+  }
+
+  nav a {
+    border: 1px solid ButtonBorder;
+    color: LinkText;
+  }
+
+  :focus-visible {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+  }
 }
